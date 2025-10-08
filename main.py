@@ -22,7 +22,7 @@ from typing import Optional, Union
 
 getcontext().prec = 50
 
-# Конфигурация основного бота член
+# Конфигурация основного бота
 BOT_TOKEN = "7651266823:AAGIRRmYG1CDTN6vv1_aTpxcGVP5_QTRf3c"
 API_ID = 17711477
 API_HASH = "bcf7bc9e630e4699a4d1db1f474df0c9"
@@ -7625,14 +7625,9 @@ async def update_bank_interest():
 
 async def on_startup():
     print("Бот запущен!")
-    app = Client("new_gg", api_id=API_ID, api_hash=API_HASH, bot_token="7651266823:AAGIRRmYG1CDTN6vv1_aTpxcGVP5_QTRf3c",
-                 parse_mode=enums.ParseMode.HTML, workers=1)
     asyncio.create_task(update_bank_interest())
 
 app.startup_function = on_startup
-
-app = Client("new_gg", api_id=API_ID, api_hash=API_HASH, bot_token="7651266823:AAGIRRmYG1CDTN6vv1_aTpxcGVP5_QTRf3c", parse_mode=enums.ParseMode.HTML, workers=1)
-
 
 app.run()
 
