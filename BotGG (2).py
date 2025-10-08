@@ -23,7 +23,7 @@ from typing import Optional, Union
 getcontext().prec = 50
 
 # Конфигурация основного бота член
-BOT_TOKEN = "8375492513:AAEolvRQeUSFYTVw-bnWMKeGu1Odv2TECGY"
+BOT_TOKEN = "7651266823:AAEe2ukFmaStJIf0-0nUkBzQU-ZjwEi6M5I"
 API_ID = 17711477
 API_HASH = "bcf7bc9e630e4699a4d1db1f474df0c9"
 ADMINS = [5775987690, 8493326566]
